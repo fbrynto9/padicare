@@ -1,4 +1,4 @@
-!pip install torchvision
+pip install git+https://github.com/pytorch/vision.git
 
 import streamlit as st
 import torch
