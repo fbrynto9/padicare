@@ -1,0 +1,4 @@
+pandas == 1.5.3
+numpy == 1.23.5
+seaborn == 0.13.1
+torch == 2.2.1
