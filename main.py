@@ -1,4 +1,4 @@
-/pip install torchvision
+!pip install torchvision
 
 import streamlit as st
 import torch
